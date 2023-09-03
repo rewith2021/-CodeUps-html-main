@@ -53,6 +53,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(".js-hamburger,.js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
+    $(".js-page-top").fadeToggle();
   });
   
   
@@ -89,13 +90,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loopedSlides: 4,
     loop: true, // ループ有効
     //slidesPerView: 4.5, // 一度に表示する枚数
-    speed: 4000, // ループの時間
+    speed: 2000, // ループの時間
     width: 280, //card width
     allowTouchMove: false, // スワイプ無効
     autoplay: {
       //delay: 0, // 途切れなくループ
-      delay: 200,
-      disableOnInteraction: false,
+      //delay: 200,
+      //disableOnInteraction: false,
     },
     breakpoints: {
       768: {

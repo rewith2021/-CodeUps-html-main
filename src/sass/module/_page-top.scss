@@ -2,18 +2,19 @@
 
 .page-top__button {
   position: fixed;
-  z-index: 9000;
+  z-index: 900;
   right: rem(18);
   bottom: rem(39);
   width: rem(48);
   height: rem(48);
   cursor: pointer;
-  background-image: url(/assets/images/common/to-top.svg);
+  background-image: url(/assets/images/common/icon-top.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: $white;
   border-radius: 50%;
-  transform: rotate(90deg);
+  //transform: rotate(90deg);
+  //transform: scale(-1, 1);
   @include mq('md'){
     right: rem(30);
     bottom: rem(40);

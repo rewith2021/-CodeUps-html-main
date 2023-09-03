@@ -23,16 +23,18 @@
 }
 
 .info__img{
+    display: block;
     aspect-ratio: 345/227;
     position: relative;
     @include mq('md'){
-        width: 80%;
+        width: 50%;
     }
 }
 
 .info__img img{
     width: 100%;
     object-fit: cover;
+    aspect-ratio: 345/227;
 }
 
 .info__img .color{
@@ -50,6 +52,7 @@
     @include mq('md'){
         align-items: center;
         margin-top: 0;
+        width: 50%;
     }
 }
 

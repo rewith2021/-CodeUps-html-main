@@ -22,7 +22,7 @@
     display: flex;
     @include mq('md'){
         padding-left: rem(40);
-        padding-right: rem(40);
+        padding-right:  min(1.38vw, rem(20));
 
     }
 }
@@ -68,7 +68,6 @@
 }
 
 .header__item{
-    letter-spacing: rem(2);
     line-height: rem(35);
     font-weight: $regular;
     height: inherit;
@@ -80,11 +79,12 @@
 .header__item a{
     align-items: center;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     height: inherit;
-    padding-left: rem(12);
-    padding-right: rem(12);
+    padding-left: min(1.38vw, rem(20));
+    padding-right: min(1.38vw, rem(20));
     
 
     //animation
@@ -119,6 +119,7 @@
   .header__item a:hover {
     text-decoration: none; /* 下線のデフォルトを解除 */
     position: relative; /* 相対的な位置指定 */
+    opacity: 0.8;
   }
   
   .header__item a:hover::after {

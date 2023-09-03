@@ -46,3 +46,8 @@
 .campaign__contents .swiper-slide.swiper-slide-active:hover{
     transform: translateY(rem(-6));
 }
+
+//コンテンツ量に合わせてカードの高さを調整
+.campaign__contents .swiper-slide{
+    height: auto;
+}
