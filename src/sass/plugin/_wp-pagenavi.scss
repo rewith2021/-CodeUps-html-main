@@ -1,0 +1,44 @@
+@use "global" as *;
+
+/*wp-pagenavi 01*/
+.wp-pagenavi {
+	clear: both;
+	text-align:center;
+
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	color: $green;
+	background-color: $white;
+	border: 1px solid $green;
+	padding: rem(8) rem(15);
+	margin: 0 rem(2);
+	white-space: nowrap;
+	-moz-border-radius: rem(3);
+	-webkit-border-radius: rem(3);
+	border-radius: rem(3);
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+}
+.wp-pagenavi a:hover{
+	color: $white;
+	background-color: $green;
+	border-color: $green;
+    }
+.wp-pagenavi span.current{
+	color: $white;
+	background-color: $green;
+	border-color: $green;
+	font-weight: bold;
+    }
+
+//追加css
+.pc-use{
+	display: none;
+	@include mq('md'){
+		display: inline-block;
+	}
+}

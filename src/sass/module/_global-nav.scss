@@ -25,6 +25,11 @@
     line-height: 1.12;
 }
 
+.global-nav__item a{
+    width: 100%;
+    display: inline-block;
+}
+
 .global-nav__item::before{
     position: absolute;
     content: '';
