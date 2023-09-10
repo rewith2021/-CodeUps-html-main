@@ -194,22 +194,30 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
   
-//modal
-$(function () {
-  const open = $(".js-modal-open"),
-    close = $(".js-modal__close"),
-    modal = $(".js-modal");
+// Aboutモーダル
 
-  //開くボタンをクリックしたらモーダルを表示する
-  open.on("click", function () {
-    modal.addClass("is-open");
+  // JavaScriptの部分
+  let scrollPos;
+
+  $(".js-modal").click(function () {
+    scrollPos = $(window).scrollTop();
+    $(".js-overlay").html($(this).prop("outerHTML"));
+    $(".js-overlay").fadeIn(200);
+    $(".js-header, .js-page-top").hide();
+    $('html').addClass('is-fixed');
+    return false;
+  });
+  
+  $(".js-overlay").click(function () {
+    $(".js-overlay").fadeOut(200, function () {
+      $(".js-header, .js-page-top").fadeIn();
+      $('html').removeClass('is-fixed');
+      $(window).scrollTop(scrollPos);
+    });
+    return false;
   });
 
-  //閉じるボタンをクリックしたらモーダルを閉じる
-  close.add(modal).on("click", function () {
-    modal.removeClass("is-open");
-  });
-});
+
 
 
 });

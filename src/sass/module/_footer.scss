@@ -75,7 +75,7 @@
     margin-top: rem(22);
     text-align: center;
     @include mq('md'){
-        margin-top: rem(40);
+        margin-top: rem(56);
         
     }
 }
@@ -85,7 +85,9 @@
     font-weight: $normal;
     font-family: $english-font;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     @include mq('md'){
         font-size: rem(12);
+        letter-spacing: 0.085em;
     }
 }

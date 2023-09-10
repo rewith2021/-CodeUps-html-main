@@ -104,8 +104,8 @@
     font-weight: $normal;
     line-height: 1;
     position: absolute;
-    top: rem(14);
-    left: rem(20);
+    top: rem(23);
+    left: rem(23);
     @include mq('md'){
         width: 100%;
         position: static;

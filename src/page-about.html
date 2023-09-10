@@ -265,48 +265,52 @@
 
 <section class="gallery layout-gallery">
   <div class="gallery__inner inner">
-    <h2 class="about__title section-title">
+    <h2 class="gallery__title section-title">
       <div class="section-title__main">gallery</div>
       <div class="section-title__sub">フォト</div>
     </h2>
     <div class="gallery__wrapper">
+      <div class="gallery__modal js-overlay"></div>
       <div class="gallery__items">
-        <div class="gallery__large js-modal-open">
+        <div class="gallery__item js-modal">
           <img src="./assets/images/common/gallery1.jpg" alt="魚の群れとサンゴ礁">
         </div>
-        <div class="gallery__small js-modal-open">
+        <div class="gallery__item js-modal">
           <img src="./assets/images/common/gallery2.jpg" alt="船と島">
+        </div>
+        <div class="gallery__item js-modal">
           <img src="./assets/images/common/gallery3.jpg" alt="魚の群れ">
         </div>
-      </div>
-
-      <div class="gallery__items">
-        <div class="gallery__large js-modal-open">
-          <img src="./assets/images/common/gallery6.jpg" alt="魚の群れ">
-        </div>
-        <div class="gallery__small js-modal-open">
+        <div class="gallery__item js-modal">
           <img src="./assets/images/common/gallery4.jpg" alt="魚の群れとサンゴ礁">
+        </div>
+        <div class="gallery__item js-modal">
           <img src="./assets/images/common/gallery5.jpg" alt="船と島">
+        </div>
+        <div class="gallery__item js-modal">
+          <img src="./assets/images/common/gallery6.jpg" alt="魚の群れ">
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<div class="modal js-modal">
-  <div class="modal__body">
-    <div class="modal__content js-modal__content">
-      <img src="./assets/images/common/gallery2.jpg" alt="検証用の画像" class="modal__img">
+<!-- 
+  
+  <div class="modal js-modal">
+    <div class="modal__body">
+      <div class="modal__content js-modal__content">
+        <img src="./assets/images/common/gallery2.jpg" alt="検証用の画像" class="modal__img">
+      </div>
     </div>
   </div>
-</div>
+-->
 
 
-<section class="contact layout-contact">
+<section class="contact layout-contact layout-contact--sub">
   <div class="contact__inner inner">
     <div class="contact__contents">
       <div class="contact__info">
-        <div class="contact__logo">
+        <div class="contact__logo contact__logo--sub">
           <img src="./assets/images/common/CodeUps-contact-logo.svg" alt="CodeUps">
         </div>
         <div class="contact__info-body">
@@ -322,11 +326,11 @@
         </div>
       </div>
 
-      <div class="contact__body">
-        <h3 class="contact__title section-title">
-          <div class="section-title__main section-title--large">contact</div>
-          <p class="section-title__sub">お問い合わせ</p>
-        </h3>
+      <div class="contact__body contact__body--sub">
+        <div class="contact__title section-title">
+          <p class="section-title__main section-title--large">contact</p>
+          <h2 class="section-title__sub">お問い合わせ</h2>
+        </div>
         <p class="contact__text">ご予約・お問い合わせはコチラ</p>
         <div class="contact__button">
           <a href="#" class="button">Contact us<span></span></a>
@@ -433,7 +437,8 @@
         </ul>
         <ul class="global-nav__items">
           <li class="global-nav__item">
-            <a href="#">プライバシーポリシー</a>
+            <a href="#">プライバシー<br class="u-mobile">
+               ポリシー</a>
           </li>
         </ul>
         <ul class="global-nav__items">
