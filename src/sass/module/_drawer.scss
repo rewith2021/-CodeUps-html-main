@@ -1,8 +1,6 @@
 @use "global" as *;
 
 
-
-
 .drawer__inner{
   display: flex;
   align-items: center;
@@ -16,21 +14,16 @@
   padding-right: rem(35);
 }
 
-
 .drawer__contents{
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, 1fr);
-  //gap: rem(40);
   background-color: $green;
   color: $white;
   column-gap: rem(33);
-  @include mq('md'){
-      display: flex;
-  }
+  margin: rem(80) 0 auto;
+
 }
-
-
 
 .drawer__item{
   font-size: rem(16);
@@ -40,7 +33,8 @@
   padding-bottom: rem(12);
 }
 
-.drawer__item a{
+.drawer__item a,
+.drawer__sub-item a{
   width: 100%;
   display: inline-block;
 }

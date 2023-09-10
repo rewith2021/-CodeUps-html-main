@@ -37,6 +37,10 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.5;
 }
+body.is-active{
+  height: 100%;
+  overflow: hidden;
+}
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,

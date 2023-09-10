@@ -29,9 +29,7 @@
     width: 100%;
     height: inherit;
     min-height: rem(550);
-    @include mq('md'){
-      object-fit: cover;
-      }
+    object-fit: cover;
     }
 
 .mv__container{

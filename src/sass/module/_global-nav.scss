@@ -6,12 +6,12 @@
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 1fr);
     column-gap: rem(40);
-    row-gap: 0;
+    row-gap: rem(10);
     @include mq('md'){
         row-gap: rem(40);
         display: flex;
         //justify-content: space-between;
-        column-gap: rem(136);
+        column-gap: rem(142);
     }
 }
 
@@ -20,8 +20,8 @@
     font-size: rem(16);
     font-weight: $bold;
     position: relative;
-    padding-top: rem(12);
-    padding-bottom: rem(12);
+    padding-top: rem(18);
+    padding-bottom: rem(18);
     line-height: 1.12;
 }
 
@@ -43,11 +43,13 @@
 
 .global-nav__sub-item{
     font-size: rem(15);
-    padding-top: rem(12);
-    padding-bottom: rem(12);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
     font-weight: $normal;
     @include mq('md'){
         font-size: rem(16);
+        padding-top: rem(9);
+        padding-bottom: rem(9);
     }
 }
 

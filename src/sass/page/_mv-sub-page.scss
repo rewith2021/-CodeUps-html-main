@@ -3,7 +3,7 @@
 .mv-sub-page{
   width: 100%;
   max-width: 100vw;
-  height: rem(460);
+  height: rem(450);
   @include mq('md'){
     height: rem(548);
   }
@@ -52,9 +52,8 @@
   font-size: rem(40);
   font-weight: $normal;
   line-height: 1.2;
-  padding-left: rem(17);
   @include mq('md'){
-    padding-left: rem(40);
+    padding-top: rem(100);
     font-size: rem(80);
     line-height: 1.25;
   }

@@ -60,12 +60,13 @@
 }
 
 .footer__nav{
-    margin-top: rem(32);
+    margin-top: rem(25);
    // margin-left: rem(35);
-   padding-left: rem(22);
+   padding-left: rem(18);
+   
    @include mq('md'){
-        padding-left: rem(35);
-        margin-top: 0;
+        padding-left: rem(22);
+        margin-top: rem(-2);
         margin-left: 0;
     }
 }

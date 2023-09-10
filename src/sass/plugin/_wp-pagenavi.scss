@@ -42,3 +42,28 @@
 		display: inline-block;
 	}
 }
+
+.wp-pagenavi .previouspostslink img,
+.wp-pagenavi .nextpostslink img{
+  width: rem(8);
+  height: rem(16);
+  display: inline-block;
+}
+
+.wp-pagenavi .nextpostslink img{
+	transform: rotate(180deg);
+}
+
+.wp-pagenavi .previouspostslink:hover,
+.wp-pagenavi .nextpostslink:hover{
+	opacity: 0.7;
+	background-color: $white;
+}
+
+.wp-pagenavi .previouspostslink{
+	margin-right: rem(30);
+}
+.wp-pagenavi .nextpostslink{
+	margin-left: rem(30);
+
+}

@@ -54,6 +54,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
     $(".js-page-top").fadeToggle();
+   // $("html").toggleClass("is-fixed");
+    $("body").toggleClass("is-active");
   });
   
   
@@ -192,5 +194,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
   
+//modal
+$(function () {
+  const open = $(".js-modal-open"),
+    close = $(".js-modal__close"),
+    modal = $(".js-modal");
+
+  //開くボタンをクリックしたらモーダルを表示する
+  open.on("click", function () {
+    modal.addClass("is-open");
+  });
+
+  //閉じるボタンをクリックしたらモーダルを閉じる
+  close.add(modal).on("click", function () {
+    modal.removeClass("is-open");
+  });
+});
+
 
 });

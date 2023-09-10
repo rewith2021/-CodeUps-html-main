@@ -29,7 +29,7 @@
 }
 
 
-//swiper card campaign
+//swiper card campaign animation
 
 .campaign__contents .swiper-slide,
 .campaign__contents .swiper-slide.swiper-slide-active,
@@ -44,7 +44,9 @@
 .campaign__contents .swiper-slide.swiper-slide-next:hover,
 .campaign__contents .swiper-slide.swiper-slide-prev:hover,
 .campaign__contents .swiper-slide.swiper-slide-active:hover{
-    transform: translateY(rem(-6));
+    //transform: translateY(rem(-6));
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
 }
 
 //コンテンツ量に合わせてカードの高さを調整
