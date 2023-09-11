@@ -53,6 +53,10 @@
     object-fit: cover;
 }
 
+.header__logo:hover{
+    opacity: 0.8;
+    transition: all .3s;
+}
 
 //pc
 .header__nav{

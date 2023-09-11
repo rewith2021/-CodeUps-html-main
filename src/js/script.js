@@ -217,7 +217,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-
+ // Informationタブメニュー
+ $('.js-tab-button').click(function () {
+  // クリックされたタブが何番目なのかを取得
+  var num = $(this).index();
+  // タブの表示・非表示の切り替え
+  $('.js-tab-button').removeClass('is-active');
+  $(this).addClass('is-active');
+  // コンテンツの表示・非表示の切り替え
+  $('.js-tab-content').removeClass('is-active').eq(num).addClass('is-active');
+});
 
 
 });

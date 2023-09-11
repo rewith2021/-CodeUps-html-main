@@ -64,13 +64,13 @@
             </a>
           </li>
          <li class="header__item">
-            <a href="#">
+            <a href="./page-info.html">
               <p class="header__english">Information</p>
               <p class="header__japanese">ダイビング情報</p>
             </a>
           </li>
          <li class="header__item">
-            <a href="#">
+            <a href="./page-blog.html">
               <p class="header__english">Blog</p>
               <p class="header__japanese">ブログ</p>
             </a>
@@ -134,7 +134,7 @@
         <div class="drawer__block">
           <ul class="drawer__items">
             <li class="drawer__item">
-              <a href="#">ダイビング情報</a>
+              <a href="./page-info.html">ダイビング情報</a>
             </li>
             <ul class="drawer__sub-menu">
               <li class="drawer__sub-item">
@@ -150,7 +150,7 @@
           </ul>
           <ul class="drawer__items">
             <li class="drawer__item">
-              <a href="#">ブログ</a>
+              <a href="./page-blog.html">ブログ</a>
             </li>
           </ul>
         </div>
@@ -235,28 +235,55 @@
 
 <div class="page-info layout-info">
   <div class="page-info__inner inner">
-    <ul class="page-info__tag-wrapper">
-      <li class="page-info__tag page-info__tag--current">
-        <a href="#">ライセンス講習</a>
+    <ul class="page-info__tab-wrapper">
+      <li class="page-info__tab js-tab-button is-active">
+        <button><span></span>ライセンス<br class="u-mobile"> 講習</button>
       </li>
-      <li class="page-info__tag">
-        <a href="#">ファンダイビング</a>
+      <li class="page-info__tab js-tab-button">
+        <button><span></span>ファン<br class="u-mobile">ダイビング</button>
       </li>
-      <li class="page-info__tag">
-        <a href="#">体験ダイビング</a>
+      <li class="page-info__tab js-tab-button">
+        <button><span></span>体験<br class="u-mobile">ダイビング</button>
       </li>
     </ul>
-    <div class="page-info__item info-card">
-      <div class="info-card__body">
-        <p class="info-card__title">ライセンス講習</p>
-        <p class="info-card__text">泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！</p>
+    <div class="page-info__items">
+      <div class="page-info__item info-card js-tab-content is-active">
+        <div class="info-card__body">
+          <p class="info-card__title">ライセンス講習</p>
+          <p class="info-card__text">泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！</p>
+        </div>
+        <div class="info-card__img">
+          <picture>
+            <source srcset="./assets/images/common/info-card-sp1.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/common/info-card-pc1.jpg" alt="ダイバーが浮いている画像">
+          </picture>
+        </div>
       </div>
-      <div class="info-card__img">
-        <picture>
-          <source srcset="./assets/images/common/info-card-sp1.jpg" media="(max-width: 768px)">
-          <img src="./assets/images/common/info-card-pc1.jpg" alt="ダイバーが浮いている画像">
-        </picture>
+      <div class="page-info__item info-card js-tab-content">
+        <div class="info-card__body">
+          <p class="info-card__title">ファンダイビング</p>
+          <p class="info-card__text">ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！</p>
+        </div>
+        <div class="info-card__img">
+          <picture>
+            <source srcset="./assets/images/common/info-card-sp2.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/common/info-card-pc2.jpg" alt="ダイバーが浮いている画像">
+          </picture>
+        </div>
       </div>
+      <div class="page-info__item info-card js-tab-content">
+        <div class="info-card__body">
+          <p class="info-card__title">体験ダイビング</p>
+          <p class="info-card__text">ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！</p>
+        </div>
+        <div class="info-card__img">
+          <picture>
+            <source srcset="./assets/images/common/info-card-sp3.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/common/info-card-pc3.jpg" alt="ダイバーが浮いている画像">
+          </picture>
+        </div>
+      </div>
+
     </div>
     
 
@@ -348,7 +375,7 @@
       <div class="global-nav__block">
         <ul class="global-nav__items">
           <li class="global-nav__item">
-            <a href="#">ダイビング情報</a>
+            <a href="./page-info.html">ダイビング情報</a>
           </li>
           <ul class="global-nav__sub-menu">
             <li class="global-nav__sub-item">
@@ -364,7 +391,7 @@
         </ul>
         <ul class="global-nav__items">
           <li class="global-nav__item">
-            <a href="#">ブログ</a>
+            <a href="./page-blog.html">ブログ</a>
           </li>
         </ul>
       </div>
