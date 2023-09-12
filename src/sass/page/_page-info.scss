@@ -10,16 +10,15 @@
     content: '';
     width: rem(120);
     height: rem(60);
-    top: rem(8);
     left: calc(50% - min(30vw, rem(430)));
-    transform: translate(-61%, -58%);
+    transform: translate(-58%, -149%);
     //left: 50%;
     background-image: url(/assets/images/common/voice-fish-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
     @include mq('md'){
-        transform: translate(-61%, -30%);
+        transform: translate(-61%, -21%);
         top: rem(-32);
         width: rem(320);
         height: rem(200);

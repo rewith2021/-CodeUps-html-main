@@ -22,8 +22,10 @@
 
 .blog-cards a:hover{
   opacity: 1;
-  transform: translateY(rem(-7));
+  
+  //transform: translateY(rem(-7));
   img{
     opacity: 0.8;
+    transition: opacity 0.3s;
   }
 }

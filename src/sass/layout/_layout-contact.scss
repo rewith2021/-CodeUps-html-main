@@ -7,12 +7,26 @@
         margin-top: rem(140);
     }
 }
+
+//modifier
 .layout-contact--large{
     margin-top: rem(120);
 }
+
 .layout-contact--sub{
     margin-top: rem(97);
     @include mq('md'){
         margin-top: rem(120);
+    }
+}
+
+.layout-contact--info{
+    margin-top: rem(105);
+}
+
+.layout-contact--blog-detail{
+    margin-top: rem(110);
+    @include mq('md'){
+        
     }
 }

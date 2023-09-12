@@ -1,37 +1,88 @@
 @use "global" as *;
 
 
-.page-blog__content-wrapper{
+.page-blog__inner{
+    position: relative;
+}
 
+.page-blog__inner::before{
+    position: absolute;
+    content: '';
+    width: rem(120);
+    height: rem(60);
+    top: rem(8);
+    left: calc(50% - min(30vw, rem(430)));
+    transform: translate(-53%, -58%);
+    //left: 50%;
+    background-image: url(/assets/images/common/voice-fish-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
     @include mq('md'){
+        transform: translate(-62%, -21%);
+        top: rem(-32);
+        width: rem(320);
+        height: rem(200);
+    }
+}
+
+.page-blog__content-wrapper {
+    @include mq('md') {
         display: flex;
         gap: rem(80);
     }
 }
-.page-blog__main-contents{
-    @include mq('md'){
+
+.page-blog__main-contents {
+    overflow: hidden;
+    padding: rem(4) rem(3) rem(10);
+
+    @include mq('md') {
         width: 70%;
-    }
-}
-.page-blog__sub-contents{
-    @include mq('md'){
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        gap: rem(80);
+        overflow: visible;
+        padding: 0;
     }
 }
 
-.page-blog__items.blog-cards{
-    
-    @include mq('md'){
+.page-blog__sub-contents {
+    margin-top: rem(80);
+    display: flex;
+    flex-direction: column;
+    gap: rem(86);
+    padding-left: rem(25);
+    padding-right: rem(25);
+    @include mq('md') {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        width: 29%;
+        gap: rem(82);
+    }
+}
+
+//css 詳細度
+.page-blog__items.blog-cards {
+
+    @include mq('md') {
         grid-template-columns: repeat(2, 1fr);
         column-gap: rem(40);
-        row-gap: rem(80);
+        row-gap: rem(77);
     }
 }
 
-.page-blog__sub-headline{
+.page-blog__main-contents .pagenavi {
+    margin: rem(85) calc(50% - 50vw) 0;
+    width: 100vw;
+
+    @include mq('md') {
+        width: 100%;
+        margin: rem(80) auto 0;
+    }
+}
+
+//
+
+.page-blog__sub-headline {
     display: flex;
     gap: rem(8);
     align-items: center;
@@ -39,24 +90,94 @@
     border-left: 8px solid $green;
 }
 
-.page-blog__sub-headline span{
-   display: inline-block;
-   width: rem(50);
-   height: rem(50);
-   content: '';
-   mask-image: url(/assets/images/common/info-icon1.svg);
-   mask-repeat: no-repeat;
-   mask-size: contain;
-   background-color: $black;
+.page-blog__sub-headline span {
+    display: inline-block;
+    width: rem(50);
+    height: rem(50);
+    content: '';
+    mask-image: url(/assets/images/common/info-icon1.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: $black;
 }
 
-.page-blog__sub-headline h2{
+.page-blog__sub-headline h2 {
     font-size: rem(24);
     font-weight: $regular;
 }
-.page-blog__articles-wrapper{
+
+.page-blog__mini-cards {
     margin-top: rem(24);
     display: flex;
     flex-direction: column;
-    gap: rem(40);
+    gap: rem(20);
+    align-items: center;
+  
+}
+
+.page-blog__articles-wrapper {
+    margin-top: rem(27);
+    display: flex;
+    flex-direction: column;
+    gap: rem(28);
+    align-items: center;
+    @include mq('md'){
+        margin-top: rem(24);
+        gap: rem(24);
+    }
+}
+
+.page-blog__articles {
+    margin-top: rem(24);
+}
+
+.page-blog__button {
+    text-align: center;
+    width: 100%;
+}
+
+.page-blog__archives {
+    margin-top: rem(27);
+    color: $green;
+    font-size: rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+}
+
+.page-blog__year,
+.page-blog__month {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(8);
+}
+
+.page-blog__year.is-active span {
+   transform: rotate(90deg);
+   transition: transform 0.2s ease;
+}
+
+.page-blog__month{
+    padding-left: rem(24);
+}
+
+.page-blog__month span,
+.page-blog__year span {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: rem(12) 0 rem(12) rem(20.8);
+    border-color: transparent transparent transparent $green;
+    transition: transform 0.3s ease;
+}
+
+.page-blog__archive-content{
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.page-blog__archive-content.is-active{
+    display: block;
+    transition: transform 0.3s ease;
 }

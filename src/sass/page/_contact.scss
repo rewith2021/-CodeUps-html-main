@@ -7,7 +7,7 @@
         display: flex;
         width: 100%;
         padding-top: rem(86);
-        padding-bottom: rem(75);
+        padding-bottom: rem(80);
        // padding-left: rem(50);
        // padding-right: rem(50);
        background: $white;
@@ -50,6 +50,9 @@
     aspect-ratio: 174/65;
     width: rem(174);
     margin: auto;
+    @include mq('md'){
+        width: rem(200);
+    }
  
 }
 
@@ -70,8 +73,7 @@
     margin-top: rem(4);
     @include mq('md'){
         display: flex;
-        padding-top: rem(24);
-        margin-top: rem(8);
+        margin-top: 0;
         justify-content: space-between;
     }
 }
@@ -111,7 +113,7 @@
     margin-top: rem(10);
     @include mq('md'){
         width: 47.037%;
-        margin-top: 0;
+        padding-right: rem(24);
     }
 }
 

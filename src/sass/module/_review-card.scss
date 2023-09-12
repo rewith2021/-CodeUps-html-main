@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.review-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: rem(294);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-card__img{
+    aspect-ratio: 294/218;
+}
+
+.review-card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.review-card__tag{
+    margin-top: rem(16);
+    font-size: rem(12);
+}
+.review-card__text{
+    margin-top: rem(8);
+    font-size: rem(24);
+    font-weight: $medium;
+    line-height: calc(70/48);
+}
+
+.review-card__button{
+    width: 100%;
+    text-align: center;
+    margin-top: rem(40);
+    @include mq('md'){
+        margin-top: rem(50);
+    }
+}
