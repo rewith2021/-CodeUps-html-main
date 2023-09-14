@@ -217,14 +217,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     scrollPos = $(window).scrollTop();
     $(".js-overlay").html($(this).prop("outerHTML"));
     $(".js-overlay").fadeIn(200);
-    $(".js-header, .js-page-top").hide();
+    $(".js-page-top").hide();
     $('html').addClass('is-fixed');
     return false;
   });
 
   $(".js-overlay").click(function () {
     $(".js-overlay").fadeOut(200, function () {
-      $(".js-header, .js-page-top").fadeIn();
+      $(".js-page-top").fadeIn();
       $('html').removeClass('is-fixed');
       $(window).scrollTop(scrollPos);
     });
