@@ -24,63 +24,7 @@
     }
 }
 
-.page-campaign__tag-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    row-gap: rem(16);
-    column-gap: rem(21);
-    position: relative;
-    z-index: 10;
-    @include mq('md'){
-        display: flex;
-        gap: rem(32);
-    }
-}
 
-.page-campaign__tag a{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding-top: rem(4);
-    padding-bottom: rem(4);
-    border: 1px solid $green;
-    color: $green;
-    line-height: calc(22/14);
-    font-size: rem(14);
-    cursor: pointer;
-    position: relative;
-    @include mq('md'){
-        width: rem(162);
-    }
-}
-
-.page-campaign__tag.page-campaign__tag--current a{
-    color: $white;
-    background-color: $green;
-}
-
-.page-campaign__tag a::before {
-    background: $green;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: .5s cubic-bezier(0.45, 0, 0.55, 1);
-    z-index: -1;
-  }
-  .page-campaign__tag a:hover {
-    color: $white;
-    opacity: 1;//reset css
-  }
-
-  .page-campaign__tag a:hover::before {
-    transform: scale(1, 1);
-  }
-  
 
 .page-campaign__wrapper{
     display: flex;

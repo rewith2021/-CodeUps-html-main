@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.price-table{
+    display: flex;
+    flex-direction: column;
+    @include mq('md'){
+        flex-direction: row;
+        border-top: rem(1) solid $green;
+        width: 100%;
+        max-width: rem(700);
+        margin: 0 auto;
+    }
+}
+
+.price-table__column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: rem(1) solid $green;
+    border-left: rem(1) solid $green;
+    border-right: rem(1) solid $green;
+}
+
+.price-table__head{
+    color: $white;
+    background-color: $green;
+    font-weight: $bold;
+    display: flex;
+    text-align: center;
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    justify-content: center;
+    gap: rem(8);
+    @include mq('md'){
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 28.57%;
+    }
+}
+
+.price-table__body{
+    @include mq('md'){
+        width: 71.43%;
+    }
+}
+
+.price-table__head span{
+    display: inline-block;
+    position: relative;
+    width: rem(24);
+    height: rem(24);
+    @include mq('md'){
+        width: rem(64);
+        height: rem(64);
+    }
+}
+
+.price-table__head span::before{
+    position: absolute;
+    content: '';
+    mask-image: url(/assets/images/common/info-icon1.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: rem(24);
+    height: rem(24);
+    @include mq('md'){
+        width: rem(64);
+        height: rem(64);
+    }
+}
+
+.price-table__menu,
+.price-table__price{
+    display: flex;
+    height: inherit;
+    align-items: center;
+
+}
+
+.price-table__menu{
+    width: 69.56%;
+   
+    text-align: center;
+    justify-content: center;
+    @include mq('md'){
+        justify-content: flex-start;
+        width: 64%;
+        text-indent: -0.5em;
+    }
+}
+
+.price-table__price{
+    width: 30.44%;
+    padding-right: rem(16);
+    border-left: rem(1) solid $green;
+    justify-content: flex-end;
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+    @include mq('md'){
+        padding-top: rem(16);
+        width: 28.44%;
+        padding-right: 0;
+    }
+}

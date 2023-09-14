@@ -11,3 +11,9 @@
 .layout-pagenavi.layout-pagenavi--blog-detail{
     margin-top: rem(46);
 }
+.layout-pagenavi.layout-pagenavi--voice{
+    margin-top: rem(80);
+    @include mq('md'){
+        margin-top: rem(70);
+    }
+}

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>Campaign</title>
+  <title>Blog</title>
   <meta name="description" content="ブログの一覧ページ" />
   <meta name="keywords" content="ダイビング ライセンス取得 ダイビング体験" />
   <!-- ogp -->
@@ -80,19 +80,19 @@
             </a>
           </li>
           <li class="header__item">
-            <a href="#">
+            <a href="./page-voice.html">
               <p class="header__english">Voice</p>
               <p class="header__japanese">お客様の声</p>
             </a>
           </li>
           <li class="header__item">
-            <a href="#">
+            <a href="./page-price.html">
               <p class="header__english">Price</p>
               <p class="header__japanese">料金一覧</p>
             </a>
           </li>
           <li class="header__item">
-            <a href="#">
+            <a href="./page-faq.html">
               <p class="header__english">FAQ</p>
               <p class="header__japanese">よくある質問</p>
             </a>
@@ -162,12 +162,12 @@
           <div class="drawer__block">
             <ul class="drawer__items">
               <li class="drawer__item">
-                <a href="#">お客様の声</a>
+                <a href="./page-voice.html">お客様の声</a>
               </li>
             </ul>
             <ul class="drawer__items">
               <li class="drawer__item">
-                <a href="#">料金一覧</a>
+                <a href="./page-price.html">料金一覧</a>
               </li>
               <ul class="drawer__sub-menu">
                 <li class="drawer__sub-item">
@@ -186,7 +186,7 @@
           <div class="drawer__block">
             <ul class="drawer__items">
               <li class="drawer__item">
-                <a href="#">よくある質問</a>
+                <a href="./page-faq.html">よくある質問</a>
               </li>
             </ul>
             <ul class="drawer__items">
@@ -229,9 +229,10 @@
     </div>
 
     <!-- パンくずリスト -->
-    <div class="breadcrumb">
-      <div class="inner">
-        <div>TOP > ブログ一覧</div>
+    <div class="breadcrumb layout-breadcrumb">
+      <div class="breadcrumb__inner inner">
+        <span><a href="./index.html">TOP</a></span> >
+        <span><a href="./page-faq.html">ブログ一覧</a></span>
       </div>
     </div>
 
@@ -496,13 +497,24 @@
                 <h2>アーカイブ</h2>
               </div>
               <div class="page-blog__archives">
-                <p class="page-blog__year js-archive-button"><span></span> 2023</p>
-                <div class="page-blog__archive-content js-archive">
-                  <p class="page-blog__month"><span></span> 3月</p>
-                  <p class="page-blog__month"><span></span> 2月</p>
-                  <p class="page-blog__month"><span></span> 1月</p>
+                <div class="page-blog__archive-wrapper js-archive__item">
+                  <p class="page-blog__year js-archive__title"><span></span> 2023</p>
+                  <div class="page-blog__archive-content js-archive__body">
+                    <p class="page-blog__month"><span></span> 3月</p>
+                    <p class="page-blog__month"><span></span> 2月</p>
+                    <p class="page-blog__month"><span></span> 1月</p>
+                  </div>
                 </div>
-                <p class="page-blog__year"><span></span> 2022</p>
+                <div class="page-blog__archive-wrapper js-archive__item">
+                  <p class="page-blog__year js-archive__title"><span></span> 2022</p>
+                  <div class="page-blog__archive-content js-archive__body">
+                    <p class="page-blog__month"><span></span> 3月</p>
+                    <p class="page-blog__month"><span></span> 2月</p>
+                    <p class="page-blog__month"><span></span> 1月</p>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </aside>
@@ -621,12 +633,12 @@
         <div class="global-nav__block">
           <ul class="global-nav__items">
             <li class="global-nav__item">
-              <a href="#">お客様の声</a>
+              <a href="./page-voice.html">お客様の声</a>
             </li>
           </ul>
           <ul class="global-nav__items">
             <li class="global-nav__item">
-              <a href="#">料金一覧</a>
+              <a href="./page-price.html">料金一覧</a>
             </li>
             <ul class="global-nav__sub-menu">
               <li class="global-nav__sub-item">
@@ -644,7 +656,7 @@
         <div class="global-nav__block">
           <ul class="global-nav__items">
             <li class="global-nav__item">
-              <a href="#">よくある質問</a>
+              <a href="./page-faq.html">よくある質問</a>
             </li>
           </ul>
           <ul class="global-nav__items">

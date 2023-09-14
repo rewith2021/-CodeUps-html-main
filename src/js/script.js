@@ -195,21 +195,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  //blog archive tab
-  $('.js-archive-button').click(function () {
-    // タブの表示・非表示の切り替え
-    $('.js-archive').toggleClass('is-active');
-    $('.js-archive-button').toggleClass('is-active');
-   // $(this).removeClass('is-active');
-   
-  });
-  //const archiveButton = document.querySelector('.js-archive-button');
-  //const archiveContent = document.querySelector('.js-archive');
-  //  archiveButton.addEventListener('click', () => {
-  //  archiveButton.classList.toggle('is-active');
-  //  archiveContent.classList.toggle('is-active');
-  //});
+  ////blog archive tab
 
+  $(function () {
+    $(".js-archive__item:first-child .js-archive__body").css(
+      "display",
+      "block"
+    );
+    $(".js-archive__item:first-child .js-archive__title").addClass("is-active");
+    $(".js-archive__title").on("click", function () {
+      $(this).toggleClass("is-active");
+      $(this).next().slideToggle(300);
+    });
+    });
 
 
   // Aboutモーダル
@@ -244,5 +242,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.js-tab-content').removeClass('is-active').eq(num).addClass('is-active');
   });
 
+  //FAQ accordion
+  //accordion
+
+  $(function () {
+    $(".js-accordion__item:first-child .js-accordion__body").css(
+      "display",
+      "block"
+    );
+    $(".js-accordion__item:first-child .js-accordion__title").addClass("is-active");
+    $(".js-accordion__title").on("click", function () {
+      $(this).toggleClass("is-active");
+      $(this).next().slideToggle(300);
+    });
+    });
 
 });

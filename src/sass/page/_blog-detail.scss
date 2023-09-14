@@ -32,12 +32,14 @@
     flex-grow: 1;
 }
 
-.blog-detail__date{
+//WP setting css
+
+.blog-detail__head time{
     font-family: $english-font;
     font-size: rem(14);
 }
 
-.blog-detail__title{
+.blog-detail__head h2{
     line-height: 1.5;
     padding-bottom: rem(4);
     border-bottom: 1px solid $green;
@@ -50,17 +52,17 @@
     }
 }
 
-.blog-detail__text{
+.blog-detail p{
     line-height: 1.5;
 }
 
-.blog-detail__list{
+.blog-detail__lists li{
     line-height: 1.8;
     padding-left: rem(27);
     position: relative;
 }
 
-.blog-detail__list::before{
+.blog-detail__lists li::before{
     position: absolute;
     content: '';
     width: rem(18);

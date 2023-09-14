@@ -9,6 +9,12 @@
   }
 }
 
+.voice-cards--mini{
+  @include mq('md'){
+    row-gap: rem(79);
+  }
+}
+
 .voice-cards__item{
   width: 100%;
   max-width: rem(550);

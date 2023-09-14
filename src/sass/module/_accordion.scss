@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.accordion{
+    @include mq('md'){
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+}
+
+
+.accordion__title{
+    background-color: $green;
+    color: $white;
+    display: flex;
+    padding: rem(16);
+    justify-content: space-between;
+    position: relative;
+    @include mq('md'){
+        padding: rem(24) rem(40);
+        font-size: rem(20);
+    }
+}
+
+.accordion__title::before,
+.accordion__title::after{
+    position: absolute;
+    top: 50%;
+    right: rem(16);
+    width: rem(28);
+    height: rem(1);
+    content: "";
+    background-color: $white;
+    transition: 0.3s transform, 0.3s opacity;
+    @include mq('md'){
+        width: rem(32);
+        right: rem(40);
+    }
+}
+
+.accordion__title::before{
+    transform: rotate(90deg);
+}
+.accordion__title.is-active::before{
+    transform: rotate(0deg);
+}
+
+.accordion__body{
+    display: none;
+    background-color: $white;
+    border: rem(1) solid $green;
+    padding: rem(20) rem(16);
+    @include mq('md'){
+        padding: rem(36) rem(40);
+    }
+}

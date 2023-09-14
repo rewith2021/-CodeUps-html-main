@@ -1,0 +1,40 @@
+@use "global" as *;
+.page-faq__inner{
+    position: relative;
+}
+
+.page-faq__inner::before{
+    position: absolute;
+    content: '';
+    width: rem(120);
+    height: rem(60);
+    left: calc(50% - min(30vw, rem(430)));
+    transform: translate(-58%, -66%);
+    //left: 50%;
+    background-image: url(/assets/images/common/voice-fish-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    @include mq('md'){
+        transform: translate(-61%, -21%);
+        top: rem(-32);
+        width: rem(320);
+        height: rem(200);
+    }
+}
+
+
+.page-faq__contents{
+    display: flex;
+    flex-direction: column;
+    gap: rem(38);
+    z-index: 10;
+    position: relative;
+    @include mq('md'){
+        max-width: rem(700);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: rem(44);
+    }
+}
