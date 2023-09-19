@@ -76,4 +76,26 @@
 
 
 
+.button.button--reverse{
+  background-color: $white;
+  color: $green;
+}
+.button.button--reverse span{
+  border-bottom: 1px solid $green;
+  border-right: 1px solid $green;
+}
 
+.button.button--reverse:hover{
+  color: $white;
+}
+.button.button--reverse:hover span{
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+}
+
+.button.button--reverse::before{
+ background: $green;
+}
+.button.button--reverse::after{
+  border: 1px solid $white;
+}

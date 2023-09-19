@@ -1,0 +1,60 @@
+@use "global" as *;
+.page-contact__inner{
+    position: relative;
+}
+
+.page-contact__inner::before{
+    position: absolute;
+    content: '';
+    width: rem(120);
+    height: rem(60);
+    top: rem(8);
+    left: calc(50% - min(30vw, rem(430)));
+    transform: translate(-53%, -58%);
+    //left: 50%;
+    background-image: url(/assets/images/common/voice-fish-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    @include mq('md'){
+        transform: translate(-62%, -21%);
+        top: rem(-32);
+        width: rem(320);
+        height: rem(200);
+    }
+}
+
+.page-contact__invalid-text{
+    color: #C94800;
+    font-size: rem(14);
+    width: 100%;
+    max-width: rem(224);
+    text-indent: rem(-14);
+    margin: 0 auto rem(40);
+    @include mq('md'){
+        max-width: rem(400);
+        text-align: center;
+        padding-left: rem(26);
+    }
+
+
+}
+
+.page-contact__content{
+
+    @include mq('md'){
+    max-width: rem(700);
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.page-contact__thanks{
+    text-align: center;
+}
+.page-contact__thanks-message:nth-child(2){
+    margin-top: rem(40);
+    @include mq('md'){
+        margin-top: rem(32);
+    }
+}

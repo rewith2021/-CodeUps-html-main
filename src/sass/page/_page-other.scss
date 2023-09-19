@@ -1,0 +1,78 @@
+@use "global" as *;
+.page-other__inner{
+    position: relative;
+}
+
+.page-other__inner::before{
+    position: absolute;
+    content: '';
+    width: rem(120);
+    height: rem(60);
+    left: calc(50% - min(30vw, rem(430)));
+    transform: translate(-58%, -66%);
+    //left: 50%;
+    background-image: url(/assets/images/common/voice-fish-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    @include mq('md'){
+        transform: translate(-61%, -21%);
+        top: rem(-32);
+        width: rem(320);
+        height: rem(200);
+    }
+}
+
+//共通パーツ
+.page-other__title{
+    font-size: rem(24);
+    @include mq('md'){
+        font-size: rem(32);
+    }
+}
+
+.page-other__text-box{
+    margin-top: rem(40);
+}
+.page-other__text,.page-other__list{
+    line-height: 2;
+}
+
+.page-other__lists{
+    margin-top: rem(28);
+}
+
+.page-other__text:not(:first-child){
+    margin-top: rem(32);
+}
+
+
+//site map
+.page-other__nav.global-nav{
+    padding-left: rem(24);
+    @include mq('md'){
+    column-gap: rem(163);
+    padding-left: rem(24);
+   }
+}
+.page-other .global-nav__item::before{
+    mask-image: url(/assets/images/common/icon-starfish.svg);
+    background-color: $green;
+}
+
+//利用規約
+.page-other__contents{
+    width: 100%;
+    @include mq('md'){
+        max-width: rem(800);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.page-other__lists{
+    list-style: decimal;
+    padding-left: rem(20);
+}
+
+//

@@ -16,8 +16,9 @@
     padding: rem(16);
     justify-content: space-between;
     position: relative;
+    cursor: pointer;
     @include mq('md'){
-        padding: rem(24) rem(40);
+        padding: rem(24) rem(68) rem(24) rem(40);
         font-size: rem(20);
     }
 }
